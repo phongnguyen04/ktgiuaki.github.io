@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.mang1 {
+        background-color: aqua;
+        width: 100%;
+        height: auto;
+    }
+    @keyframes my {
+        0% { color: #F8CD0A; }
+        50% { color: #fff; }
+        100% { color: #F8CD0A; }
+    }
+    .test {
+        font-weight:bold;
+        -webkit-animation: my 700ms infinite;
+        -moz-animation: my 700ms infinite;
+        -o-animation: my 700ms infinite;
+        animation: my 700ms infinite;
+    }.box-menu {
+        background-color: #438bca;
+        width: 100%;
+        height: 50px;
+        margin-top: -3px;
+        text-align: center;
+    }
+    .box-menu ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .box-menu ul li {
+        margin: -15px;
+        padding: 14px;
+        margin-right: 24px;
+    }
+    .box-menu ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .box-menu ul li:hover{
+        background-color: #3280c3;
+    }
+    .box-submenu {
+        display: none; 
+    }
+    .box-submenu ul li a {
+        color: black;
+    }
+    .box-menu ul li:hover .box-submenu {
+        display: block;
+        position: absolute;
+        background: rgb(223, 208, 208);
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+    .box-menu ul li:hover .box-submenu ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .box-menu ul li:hover .box-submenu ul li{ 
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+    }
+    .lienket {
+        margin-top: 25px
+    }
+    .bang {
+        border: 1px solid #aaa;
+        width: 20%;
+    }
+    .caco {
+        background-color: lavender;
+    }
+    .bang tr th a {
+        text-decoration: none;
+        color: black;
+    }
+    .fa-facebook {
+        margin-right: 5px;
+        margin-left: 5px;
+        color: blue;
+    }
+    .fa-square-facebook{
+        margin-right: 5px;
+        margin-left: -18px;
+        color: blue;
+    }
+    .fa-google{
+        margin-right: 5px;
+        margin-left: -35px;
+        color: red;
+    }
+    .Gtbt {
+        background-color: #3280c3;
+        width: 50%;
+        height: 210px;
+        margin-left: 25%;
+        margin-top: -180px;
+    }
+    .khoangchen {
+        background-color: #3280c3;
+        width: 50%;
+        height: 10px;
+        margin-left: 25%;
+        margin-top: -220px;
+    }
+    .thongtin {
+        background-color: #F8CD0A;
+        width: 20%;
+        height: auto;
+        margin-left: 80%;
+        margin-top: -10px;
+    }
+    .fa-user {
+        margin-right: 5px;
+    }
+    .fa-person {
+        margin-right: 5px;
+    }
+    .fa-location-dot {
+        margin-right: 5px;
+    }
+    .fa-phone {
+        margin-right: 5px;
+    }
+    .mangcuoi {
+        background-color: chartreuse;
+    }
+    .anh {
+        border-radius: 100%;
+        margin-left: 80px;
+        margin-top: 5px;
+    }
+    .mangcuoi {
+        background-color: forestgreen;
+        width: 80%;
+        margin-left: 10%;
+        height: 90px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .fa-school {
+        margin-right: 5px;
+    }</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div>
+        <head>
+            <div class="mang1">
+                <marquee behavior="alternate"><h1 class="test">Giới thiệu bản thân</h1></marquee>
+            </div>
+        </head>
+        <div class="box-menu">
+            <ul class="menu2">
+                <li>Giới thiệu
+                    <div class="box-submenu">
+                        <ul>
+                            <li><a href="">Bản thân</a></li>
+                            <li><a href="https://vi.wikipedia.org/wiki/S%E1%BA%A7m_S%C6%A1n">Quê hương</a></li>
+                            <li><a href="./khoa.html">Ngành học</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>Trường học
+                    <div class="box-submenu">
+                        <ul>
+                            <li><a href="./truong.html">Đại học Đại Nam</a></li>
+                            <li><a href="https://thptsamson.edu.vn/">Trường thpt</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lienket">
+            <table class="bang">
+                <tr class="caco" height="40px"><th><a href="https://www.facebook.com/profile.php?id=100087290230846"><i class="fa-brands fa-facebook"></i>Facebook cá nhân</a></th></tr>
+                <tr class="caco" height="40px"><th><a href="https://www.facebook.com/DAINAM.EDU.VN"><i class="fa-brands fa-facebook"></i>Facebook Trường</a></th></tr>
+                <tr class="caco" id="al" height="40px"><th><a href="https://www.facebook.com/dainam.fit"><i class="fa-brands fa-square-facebook"></i>Facebook khoa</a></th></tr>
+                <tr class="caco" height="40px"><th><a href="https://www.dainam.edu.vn/vi"><i class="fa-brands fa-google"></i>web Trường</a></th></tr>
+            </table>
+        </div>
+        <div class="Gtbt">
+            <p>&emsp;Tên của tôi là Nguyễn Hữu Phong. Năm nay, tôi mười 19. Tôi đang là sinh viên khoa CNTT, trường đại học Đại Nam. Tôi sinh ra và lớn lên tại thành phố Sầm Sơn - Thanh Hóa. Gia đình của tôi gồm có bố, mẹ, 2 em và tôi. Bố của tôi đã bốn 46 tuổi. Bố là một kiến trúc sư. Công việc của bố khá bận rộn. Đối với tôi, bố là một người nghiêm khắc và khó tính. Dù vậy, tôi rất ngưỡng mộ và tự hào về bố của mình. Còn mẹ của tôi là một bác sĩ. Năm nay, mẹ 42 tuổi. Mẹ rất dịu dàng và đảm đang. Công việc vất vả nhưng mẹ vẫn chăm lo cho mọi người trong gia đình. em gái của tôi đang học lớp 12. em vừa xinh đẹp, vừa học giỏi. em luôn yêu thương và nhường nhịn tôi. Ở lớp, tôi chơi thân nhất với bạn bùi Phong. Chúng tôi hay cùng đi học, trò chuyện và chơi đùa. Lớp học của tôi có tới bốn 40 thành viên. Tôi luôn đối xử thân thiện, nhiệt tình với các bạn trong lớp. Sở thích của tôi là đọc sách và bơi lội. Trong tương lai, tôi muốn trở thành 1 code giỏi. Tôi sẽ cố gắng học tập và rèn luyện thật tốt để đạt được ước mơ của mình.</p>
+        </div>
+        <div class="khoangchen"></div>
+        <div class="thongtin">
+            <img class="anh" src="./anh/z4294335258722_fcb2ebc2167a33025a5348bab87532ae.jpg" width="100px" height="100px" alt="avarta">
+            <h2 class="ten">&ensp;<i class="fa-solid fa-user"></i>Nguyễn Hữu Phong</h2>
+            <strong>&emsp;<i class="fa-solid fa-person"></i>Ngày sinh: 23/11/2004</strong><br><br>
+            <strong>&emsp;<i class="fa-solid fa-location-dot"></i>Quê quán: Bắc Sơn - Sầm Sơn - &emsp;&emsp;Thanh Hóa</strong><br><br>
+            <strong>&emsp;<i class="fa-solid fa-location-dot"></i>Nơi ở hiện tại: Phú Lãm - Hà &emsp;&emsp;Đông - Hà Nội</strong><br><br>
+            <strong>&emsp;<i class="fa-solid fa-phone"></i>Phone/zalo: 0869341744</strong><br><br>
+        </div>
+    </div>
+    <div class="mangcuoi">
+        <strong><i class="fa-solid fa-school"></i>Trường đại học Đại Nam</strong><br><br>
+        <strong><i class="fa-solid fa-school"></i>Dai Nam university</strong><br><br>
+        <strong><i class="fa-solid fa-location-dot"></i>Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội</strong>
+    </div>
+</body>
+</html>
